@@ -1,0 +1,3 @@
+num1
+
+This getting started guide helps you to install all of the required resources to get started with Amazon EKS using eksctl, a simple command line utility for creating and managing Kubernetes clusters on Amazon EKS. At the end of this tutorial, you will have a running Amazon EKS cluster with a managed node group, and the kubectl command line utility will be configured to use your new cluster. 
