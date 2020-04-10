@@ -3,7 +3,7 @@
 #---------------------------------------------------------------------
 name: hub-act
 env:
-  APPLICATION_NAME    : "tst_app"
+  APPLICATION_NAME    : "prod_app"
   DEPLOY_PACKAGE_NAME : "ver-${{ github.sha }}"
 
 on: 
