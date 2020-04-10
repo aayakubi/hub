@@ -12,7 +12,7 @@ on:
       - master
 
 jobs:
-  my_testing:
+  my_master:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,14 +27,9 @@ jobs:
   #----------------------------------------------------------
     name: hub-act-test
 
-on: 
-  push:
-    branches: 
-      - test
-
 jobs:
   my_testing:
-    runs-on: ubuntu-latest
+    runs-on: linux-latest
 
     steps:
     - name: Print Hello Message in Testing
