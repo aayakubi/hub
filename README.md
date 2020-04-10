@@ -1,4 +1,4 @@
-#------------------------ check status of prj ------------------------
+#------------------------ check status of prj -----------------------
 
 Status of master Deployment:<br>
 <img src="https://github.com/aayakubi/hub/workflows/hub-act/badge.svg?branch=master"><br>
