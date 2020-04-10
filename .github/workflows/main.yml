@@ -26,9 +26,6 @@ jobs:
         echo "Appication name: ${{ env.APPLICATION_NAME }}"
   #----------------------------------------------------------
     name: hub-act-test
-env:
-  APPLICATION_NAME    : "test_app"
-  DEPLOY_PACKAGE_NAME : "ver-${{ github.sha }}"
 
 on: 
   push:
