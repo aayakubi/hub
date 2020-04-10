@@ -27,7 +27,7 @@ jobs:
   #----------------------------------------------------------
     name: hub-act-test
 env:
-  APPLICATION_NAME    : "tst_app"
+  APPLICATION_NAME    : "test_app"
   DEPLOY_PACKAGE_NAME : "ver-${{ github.sha }}"
 
 on: 
