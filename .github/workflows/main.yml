@@ -24,5 +24,28 @@ jobs:
         echo "Hello Message1"
         echo "Hello Message2"
         echo "Appication name: ${{ env.APPLICATION_NAME }}"
+  #----------------------------------------------------------
+    name: hub-act-test
+env:
+  APPLICATION_NAME    : "tst_app"
+  DEPLOY_PACKAGE_NAME : "ver-${{ github.sha }}"
+
+on: 
+  push:
+    branches: 
+      - test
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello Message in Testing
+      run : echo "Hello from Testing job"
+    
+    - name: Execure few commands
+      run : |
+        echo "Hello Message1"
+        echo "Appication name: ${{ env.APPLICATION_NAME }}"
     
  
