@@ -1,0 +1,20 @@
+name: hub-act-test
+env:
+  APPLICATION_NAME    : "check"
+  DEPLOY_PACKAGE_NAME : "ver-${{ github.sha }}"
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  master_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Git clone repo
+      uses: actions/checkout@v1
+   
+    - name: Print status
+      run : echo "checking complete"
