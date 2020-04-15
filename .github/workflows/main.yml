@@ -18,10 +18,7 @@ jobs:
     steps:
     - name: Git clone repo
       uses: actions/checkout@v1
-    
-    - name: Git status
-      uses: docker ps
-      
+   
     - name: Print status
       run : echo "checking complete"
     
