@@ -16,8 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Print Hello Message in Testing
-      run : echo "Hello World from Testing job"
+    - name: Git clone repo
+      uses: actions/checkout@v1
+    
+    - name: Git status
+      uses: git status
+      
+    - name: Print status
+      run : echo "checking complete"
     
     - name: Execure few commands
       run : |
