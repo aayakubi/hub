@@ -1,0 +1,26 @@
+docker rm $(docker ps -aq) #удалит все контейнеры
+docker rmi $(docker images -q) #удалит все образы
+
+
+docker commit образ ayakubi/name:v1 #создать образ с именем и тэгом
+docker build -t name/k8s_php_web:v4 . #билд контейнера из директории с файлом конфига докер и названием name/k8s_php_web:v4
+docker push ayakubi/name:tagname #пуш образа name в докер-репо
+docker run -d -p 7755:80 name/k8s_php_test:latest #ран контейнера в фоновом, с форвардом порта
+
+docker exec -it name bash #запустить в докере name среду bash
+docker attach name #подключиться к контейнеру name
+comm+C  comm+P #выход из контейнера без остановки
+
+
+
+тулсы:
+apt-get ctop #график контейнеров
+
+
+
+
+примеры:
+
+docker run -d --name pg postgres #старт постргес в фоне с присвоением 
+docker run -d --name -p 7777:80 nginx #запустить нжинкс в фоне и доступным локально по порту 7777
+docker run -d(-it) -v ~/temp:/home/c_temp name #запуск name и проброс директории temp 
