@@ -1,0 +1,13 @@
+
+Docs
+Edit this page to fix an error or add an improvement in a merge request
+Create an issue to suggest an improvement to this doc
+
+Product
+Create an issue if there's something you don't like about this feature
+Propose functionality by submitting a feature request
+Join beta testing to help shape new features
+Feature availability and product trials
+View pricing to see all GitLab tiers and features, or to upgrade
+GitLab Gold Free-trial to try all features in GitLab.com
+GitLab Ultimate Free-trial to try all features in GitLab self-managed
